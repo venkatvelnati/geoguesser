@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+h1{
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 7px;
+  size: 100px;
+}
+h1::first-letter{
+  color: greenyellow;
+  
+}
+.map{
+  border-color: greenyellow;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react"
+import WorldMap from "react-svg-worldmap";
+//import CountryContext from "react-svg-worldmap";
+const data = [
+  
+];
+
+
+
+function clickAction(props){
+	
+}
 
 function App() {
+	//const [name, setName] = React.useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <div align ="center" className='header'>
+		  <h1>GEOGUESSER</h1>
+      </div>
+
+      <div align="center" className='map'>
+      <WorldMap
+	  	richInteraction="true"
+        size="xl"
+        data={data}
+        onClickFunction={clickAction}
+      />
+      </div>
+
     </div>
   );
 }
